@@ -5,9 +5,8 @@ name = "pypi"
 
 [packages]
 django = "*"
-django-crispy-forms = "*"
-python-dotenv = "*"
 requests = "*"
+gunicorn = "*"
 
 [dev-packages]
 

@@ -1,13 +1,9 @@
 import requests
-from os import getenv
-from dotenv import find_dotenv, load_dotenv
+from os import environ
 
-load_dotenv(find_dotenv())
 
 def get_currencies():
-    response = requests.get(
-        getenv('api_key')
-        ).json()
+    response = requests.get(environ['API_KEY']).json()
     return response
 
 def get_currencies_names():
